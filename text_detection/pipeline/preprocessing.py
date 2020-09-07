@@ -29,7 +29,7 @@ def text_dectection_preprocess(imgs, size=720, do_sharpen=True):
 
 
 def main(yaml='args/detection_args.yaml',
-         imgs=['image/TA01_24.tif', ],
+         imgs=['image/example1.png', ],
          ):
 
     from imgcat import imgcat

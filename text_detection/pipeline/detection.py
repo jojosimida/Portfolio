@@ -130,7 +130,7 @@ def do_detection(net, images, args, refined_net):
 
 
 def main(yaml='args/detection_args.yaml',
-         imgs=['image/TA01_24.tif', ],
+         imgs=['image/example1.png', ],
          ):
 
     os.environ["CUDA_VISIBLE_DEVICES"]="2" 

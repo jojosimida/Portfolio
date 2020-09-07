@@ -243,7 +243,7 @@ def text_dectection_postprocess(imgs, polys_list, args):
 
 
 def main(yaml='args/detection_args.yaml',
-         imgs=['image/TA01_24.tif',],
+         imgs=['image/example1.png',],
          device=2
          ):
 
@@ -265,7 +265,6 @@ def main(yaml='args/detection_args.yaml',
     process_imgs = text_dectection_preprocess(ori_imgs)
     boxes_list, polys_list, ret_score_texts = do_detection(
         net, process_imgs, args, refined_net)
-
     bounds_list = text_dectection_postprocess(process_imgs, polys_list, args)
 
     # check
