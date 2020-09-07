@@ -1,0 +1,20 @@
+model:
+    text_detection_args:
+          trained_model: pretrained_model/craft_mlt_25k.pth
+          cuda: True
+          text_threshold: 0.5
+          link_threshold: 0.1
+          low_text: 0.4
+          canvas_size: 1280
+          mag_ratio: 1.
+          poly: False
+          show_time: False
+          result_folder: tmp 
+          refine: False
+          slope_ths: 0.1
+          ycenter_ths: 0.5
+          height_ths: 0.5
+          width_ths: 2
+          add_margin: 0.05
+          refine: False
+          refiner_model: pretrained_model/craft_refiner_CTW1500.pth
