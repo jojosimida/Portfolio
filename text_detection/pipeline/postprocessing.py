@@ -11,8 +11,7 @@ from text_detection.pipeline.detection import (do_detection,
                                                load_detection_model,
                                                load_detection_refined_model)
 from text_detection.pipeline.preprocessing import text_dectection_preprocess
-from text_detection.pipeline.utils import (draw_boxes, draw_boxes_char_level,
-                                           load_ocr_map)
+from text_detection.pipeline.utils import draw_boxes, load_ocr_map
 
 
 def easyocr_process(polys):
